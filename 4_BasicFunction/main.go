@@ -11,6 +11,16 @@ func facto(n int) int {
 	return n * facto(n-1)
 }
 
+func facto2(n int) int {
+	result := 1
+	for n > 0 {
+		result *= n
+		n--
+	}
+	return result
+}
+
 func main() {
 	fmt.Println(facto(5))
+	fmt.Println(facto2(5))
 }
