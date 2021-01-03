@@ -20,7 +20,16 @@ func facto2(n int) int {
 	return result
 }
 
+func facto3(n int) int {
+	result := 1
+	for i := 2; i <= n; i++ {
+		result *= i
+	}
+	return result
+}
+
 func main() {
 	fmt.Println(facto(5))
 	fmt.Println(facto2(5))
+	fmt.Println(facto3(5))
 }
