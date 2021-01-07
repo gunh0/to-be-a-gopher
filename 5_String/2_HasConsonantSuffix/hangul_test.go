@@ -10,6 +10,10 @@
 // FAIL    command-line-arguments  0.189s
 // FAIL
 
+// if Modify Output:
+// 2_HasConsonantSuffix> go test hangul_test.go hangul.go
+// ok      command-line-arguments  0.115s
+
 package hangul
 
 import "fmt"
@@ -19,5 +23,7 @@ func ExampleHasConsonantSuffix() {
 	fmt.Println(HasConsonantSuffix("그럼"))
 	fmt.Println(HasConsonantSuffix("반 갑 습 니 다!"))
 	// Output:
-	// .
+	// false
+	// true
+	// false
 }
