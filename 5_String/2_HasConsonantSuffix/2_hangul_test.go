@@ -1,4 +1,4 @@
-// 2_HasConsonantSuffix> go test hangul_test.go hangul.go
+// 2_HasConsonantSuffix> go test 2_hangul_test.go hangul.go
 // --- FAIL: ExampleHasConsonantSuffix (0.00s)
 // got:
 // false
@@ -23,7 +23,5 @@ func ExampleHasConsonantSuffix() {
 	fmt.Println(HasConsonantSuffix("그럼"))
 	fmt.Println(HasConsonantSuffix("반 갑 습 니 다!"))
 	// Output:
-	// false
-	// true
-	// false
+	// .
 }

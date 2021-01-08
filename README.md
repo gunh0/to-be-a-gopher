@@ -57,6 +57,30 @@ go fmt path/to/your/package
 
 <br/>
 
+## Compile and run Go program 
+
+```
+go run [build flags] [-exec xprog] package [arguments...]
+```
+
+Run compiles and runs the named main Go package.
+
+Command `go run` performs project's building under the hood and with flag *--work* (`go run --work main.go`) you can see the location of temporary build files.
+
+<br/>
+
+<br/>
+
+## Testing
+
+Files containing tests should be called `name_test`, with the `_test` suffix. They should be alongside the code that they are testing.
+
+To run the tests recursively call `go test -v ./...`
+
+<br/>
+
+<br/>
+
 ## How to build your first web application with Go
 
 > https://freshman.tech/web-development-with-go/
