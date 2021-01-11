@@ -1,4 +1,4 @@
-// go test .\1_Example_array.go
+// go test .\1_Example_array_test.go
 package main
 
 import "fmt"
