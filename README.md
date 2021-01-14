@@ -1,4 +1,46 @@
-<p align="center"><img src="README.assets/image-20210102025057323.png"></p>
+<p align="center"><img src="README.assets/golang.png"></p>
+
+<br/>
+
+## Contents
+
+```bash
+$ tree -L 2
+.
+├── 00_WebServer
+│   └── main.go
+├── 01_TryGo
+│   └── main.go
+├── 02_Packages
+│   ├── README.md
+│   ├── fiboMain.go
+│   ├── fibonacci
+│   └── randomNumber
+├── 03_TypeDeduction
+│   └── main.go
+├── 04_BasicFunction
+│   ├── factorial
+│   └── hanoi
+├── 05_String
+│   ├── 1_hangul
+│   ├── 2_HasConsonantSuffix
+│   ├── 3_Example_printBytes_test.go
+│   ├── 4_Modify_printBytes_test.go
+│   └── 5_concatenate_test.go
+├── 06_Array+Slice
+│   ├── 1_Example_array_test.go
+│   ├── 2_Example_slicing_test.go
+│   ├── 3_Appending_to_a_slice_test.go
+│   ├── 4_slice_capacity_test.go
+│   └── 5_slice_duplication_test.go
+├── README.assets
+│   └── golang.png
+└── README.md
+
+14 directories, 15 files
+```
+
+<br/>
 
 <br/>
 
@@ -28,10 +70,10 @@ It's a fast, statically typed, compiled language that feels like a dynamically t
 
 Gofmt'd code is:
 
-- easier to **write**: never worry about minor formatting concerns while hacking away,
-- easier to **read**: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
-- easier to **maintain**: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
-- **uncontroversial**: never have a debate about spacing or brace position ever again!
+-   easier to **write**: never worry about minor formatting concerns while hacking away,
+-   easier to **read**: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
+-   easier to **maintain**: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
+-   **uncontroversial**: never have a debate about spacing or brace position ever again!
 
 <br/>
 
@@ -57,7 +99,7 @@ go fmt path/to/your/package
 
 <br/>
 
-## Compile and run Go program 
+## Compile and run Go program
 
 ```
 go run [build flags] [-exec xprog] package [arguments...]
@@ -65,7 +107,7 @@ go run [build flags] [-exec xprog] package [arguments...]
 
 Run compiles and runs the named main Go package.
 
-Command `go run` performs project's building under the hood and with flag *--work* (`go run --work main.go`) you can see the location of temporary build files.
+Command `go run` performs project's building under the hood and with flag _--work_ (`go run --work main.go`) you can see the location of temporary build files.
 
 <br/>
 
@@ -84,4 +126,3 @@ To run the tests recursively call `go test -v ./...`
 ## How to build your first web application with Go
 
 > https://freshman.tech/web-development-with-go/
-

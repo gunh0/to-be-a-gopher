@@ -12,3 +12,11 @@ func Example_sliceCopy() {
 	fmt.Println(dest)
 	// Output:
 }
+
+func Example_sliceCopyFunc() {
+	src := []int{30, 20, 50, 10, 40}
+	dest := make([]int, len(src))
+	copy(dest, src)
+	fmt.Println(dest)
+	// Output:
+}
