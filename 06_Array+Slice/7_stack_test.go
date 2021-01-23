@@ -1,5 +1,5 @@
-// go test ./7_stack_test.go 
-package eval
+// go test ./7_stack_test.go
+package main
 
 // Eval returns the evaluation result of the given expr.
 import (
@@ -62,7 +62,7 @@ func Eval(expr string) int {
 	return nums[0]
 }
 
-func ExampleEval(){
+func ExampleEval() {
 	fmt.Println(Eval("1"))
 	fmt.Println(Eval("1 + 2"))
 	fmt.Println(Eval("1 - 2 + 3"))
