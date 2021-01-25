@@ -1,5 +1,4 @@
 // go run ./1_character_count_example.go
-
 package main
 
 import (
