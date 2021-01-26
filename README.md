@@ -8,36 +8,46 @@
 $ tree -L 2
 .
 ├── 00_WebServer
-│   └── main.go
+│   └── main.go
 ├── 01_TryGo
-│   └── main.go
+│   └── main.go
 ├── 02_Packages
-│   ├── README.md
-│   ├── fiboMain.go
-│   ├── fibonacci
-│   └── randomNumber
+│   ├── README.md
+│   ├── fiboMain.go
+│   ├── fibonacci
+│   └── randomNumber
 ├── 03_TypeDeduction
-│   └── main.go
+│   └── main.go
 ├── 04_BasicFunction
-│   ├── factorial
-│   └── hanoi
+│   ├── factorial
+│   └── hanoi
 ├── 05_String
-│   ├── 1_hangul
-│   ├── 2_HasConsonantSuffix
-│   ├── 3_Example_printBytes_test.go
-│   ├── 4_Modify_printBytes_test.go
-│   └── 5_concatenate_test.go
+│   ├── 1_hangul
+│   ├── 2_HasConsonantSuffix
+│   ├── 3_Example_printBytes_test.go
+│   ├── 4_Modify_printBytes_test.go
+│   └── 5_concatenate_test.go
 ├── 06_Array+Slice
-│   ├── 1_Example_array_test.go
-│   ├── 2_Example_slicing_test.go
-│   ├── 3_Appending_to_a_slice_test.go
-│   ├── 4_slice_capacity_test.go
-│   └── 5_slice_duplication_test.go
+│   ├── 1_Example_array_test.go
+│   ├── 2_Example_slicing_test.go
+│   ├── 3_Appending_to_a_slice_test.go
+│   ├── 4_slice_capacity_test.go
+│   ├── 5_slice_duplication_test.go
+│   ├── 6_slice_insert_test.go
+│   └── 7_stack_test.go
+├── 07_Map
+│   ├── 1_character_count.go
+│   ├── 2_map_equality.go
+│   ├── 3_maps_test.go
+│   └── 4_set_test.go
+├── 08_Input+Output
+│   └── 1_io_test.go
+├── LICENSE
 ├── README.assets
-│   └── golang.png
+│   └── golang.png
 └── README.md
 
-14 directories, 15 files
+16 directories, 23 files
 ```
 
 <br/>
