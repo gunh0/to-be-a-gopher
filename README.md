@@ -53,6 +53,8 @@ $ tree -L 2
 ### Practice
 
 - Getting into Go
+  - Multiple reuturns: `returns.go`
+  - Named return values: `namedReturn.go`
 
 <br/>
 
