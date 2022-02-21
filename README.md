@@ -52,9 +52,10 @@ $ tree -L 2
 
 ### Practice
 
-- Getting into Go
-  - Multiple reuturns: `returns.go`
-  - Named return values: `namedReturn.go`
+-   Getting into Go
+    -   Multiple reuturns: `returns.go`
+    -   Named return values: `named_return.go`
+    -   Read TCP status: `read_status.go`
 
 <br/>
 
