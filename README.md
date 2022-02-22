@@ -4,6 +4,8 @@
 
 ## Contents
 
+#### Discovering
+
 ```bash
 $ tree -L 2
 .
@@ -50,12 +52,13 @@ $ tree -L 2
 17 directories, 23 files
 ```
 
-### Practice
+#### Practice
 
 -   Getting into Go
     -   Multiple reuturns: `returns.go`
     -   Named return values: `named_return.go`
     -   Read TCP status: `read_status.go`
+    -   HTTP GET: `http_get.go`
 
 <br/>
 
