@@ -1,4 +1,4 @@
-<p align="center"><img src="README.assets/golang.png"></p>
+<p align="center"><img src="README.assets/golang-logo.png"></p>
 
 <br/>
 
@@ -54,11 +54,11 @@ $ tree -L 2
 
 #### Practice
 
--   Getting into Go
-    -   Multiple reuturns: `returns.go`
-    -   Named return values: `named_return.go`
-    -   Read TCP status: `read_status.go`
-    -   HTTP GET: `http_get.go`
+- Getting into Go
+  - Multiple reuturns: `returns.go`
+  - Named return values: `named_return.go`
+  - Read TCP status: `read_status.go`
+  - HTTP GET: `http_get.go`
 
 <br/>
 
@@ -90,10 +90,10 @@ It's a fast, statically typed, compiled language that feels like a dynamically t
 
 Gofmt'd code is:
 
--   easier to **write**: never worry about minor formatting concerns while hacking away,
--   easier to **read**: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
--   easier to **maintain**: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
--   **uncontroversial**: never have a debate about spacing or brace position ever again!
+- easier to **write**: never worry about minor formatting concerns while hacking away,
+- easier to **read**: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
+- easier to **maintain**: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
+- **uncontroversial**: never have a debate about spacing or brace position ever again!
 
 <br/>
 
@@ -145,4 +145,4 @@ To run the tests recursively call `go test -v ./...`
 
 ## How to build your first web application with Go
 
-> https://freshman.tech/web-development-with-go/
+> <https://freshman.tech/web-development-with-go/>
