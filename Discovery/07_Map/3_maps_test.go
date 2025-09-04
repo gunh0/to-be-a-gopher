@@ -35,7 +35,7 @@ func TestCount_if(t *testing.T) {
 	}
 }
 
-func ExampleCount_sort() {
+func Example_count() {
 	codeCount := map[rune]int{}
 	count("가나다나", codeCount)
 	var keys []int

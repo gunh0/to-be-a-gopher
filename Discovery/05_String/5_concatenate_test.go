@@ -1,5 +1,5 @@
 // go test -v .\5_concatenate.go
-package main
+package hangul
 
 import (
 	"fmt"
@@ -12,4 +12,6 @@ func Example_strCat() {
 	fmt.Println(s)
 	fmt.Println(*ps)
 	// Output:
+	// abcdef
+	// abcdef
 }

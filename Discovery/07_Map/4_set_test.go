@@ -16,7 +16,7 @@ func hasDupeRune(s string) bool {
 	return false
 }
 
-func ExampleHasDupeRune() {
+func Example_hasDupeRune() {
 	fmt.Println(hasDupeRune("aaa aaa"))        // true
 	fmt.Println(hasDupeRune("abc"))            // false
 	fmt.Println(hasDupeRune("Hello, world!"))  // true
