@@ -23,5 +23,7 @@ func ExampleHasConsonantSuffix() {
 	fmt.Println(HasConsonantSuffix("그럼"))
 	fmt.Println(HasConsonantSuffix("반 갑 습 니 다!"))
 	// Output:
-	// .
+	// false
+	// true
+	// false
 }

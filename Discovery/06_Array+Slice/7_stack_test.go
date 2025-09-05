@@ -69,4 +69,9 @@ func ExampleEval() {
 	fmt.Println(Eval("3 * ( 1 + 2 + 3 + 4 ) / 2"))
 	fmt.Println(Eval("3 * ( ( 3 - 1 ) * 3 ) / 2"))
 	// Output:
+	// 1
+	// 3
+	// 2
+	// 15
+	// 9
 }

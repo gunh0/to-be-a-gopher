@@ -9,4 +9,8 @@ func Example_array() {
 		fmt.Printf("%s is delicious.\n", fruit)
 	}
 	// Output:
+	// Apple is delicious.
+	// Banana is delicious.
+	// Tomato is delicious.
+	// Avocado is delicious.
 }

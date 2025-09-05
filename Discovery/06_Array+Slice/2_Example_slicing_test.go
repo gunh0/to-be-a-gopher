@@ -10,4 +10,8 @@ func Example_slicing() {
 	fmt.Println(nums[2:])
 	fmt.Println(nums[:3])
 	// Output:
+	// [1 2 3 4 5]
+	// [2 3]
+	// [3 4 5]
+	// [1 2 3]
 }

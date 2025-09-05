@@ -1,4 +1,4 @@
-// go test ./6_slice_insert_test.go 
+// go test ./6_slice_insert_test.go
 package main
 
 import "fmt"
@@ -10,9 +10,10 @@ func insert(array []string, index int, element string) []string {
 	return result
 }
 
-func Example_InsertTest() {
+func Example_insertTest() {
 	array := []string{"1", "2", "3"}
 	array = insert(array, 1, "5")
 	fmt.Println(array)
 	// Output:
+	// [1 5 2 3]
 }

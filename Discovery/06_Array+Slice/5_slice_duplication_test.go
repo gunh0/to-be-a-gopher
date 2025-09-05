@@ -11,6 +11,7 @@ func Example_sliceCopy() {
 	}
 	fmt.Println(dest)
 	// Output:
+	// [30 20 50 10 40]
 }
 
 func Example_sliceCopyFunc() {
@@ -19,6 +20,7 @@ func Example_sliceCopyFunc() {
 	copy(dest, src)
 	fmt.Println(dest)
 	// Output:
+	// [30 20 50 10 40]
 }
 
 func Example_sliceCopyAppend() {
@@ -27,4 +29,5 @@ func Example_sliceCopyAppend() {
 	copy(dest, src)
 	fmt.Println(dest)
 	// Output:
+	// [30 20 50 10 40]
 }

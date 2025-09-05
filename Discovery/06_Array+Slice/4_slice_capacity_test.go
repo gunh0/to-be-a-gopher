@@ -32,4 +32,21 @@ func Example_sliceCap() {
 	nums[2] = 100
 	fmt.Println(nums, sliced1, sliced2, sliced3)
 	// Output:
+	// [1 2 3 4 5]
+	// len: 5
+	// cap: 5
+	//
+	// [1 2 3]
+	// len: 3
+	// cap: 5
+	//
+	// [3 4 5]
+	// len: 3
+	// cap: 3
+	//
+	// [1 2 3 4]
+	// len: 4
+	// cap: 5
+	//
+	// [1 2 100 4 5] [1 2 100] [100 4 5] [1 2 100 4]
 }

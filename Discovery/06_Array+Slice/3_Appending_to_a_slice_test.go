@@ -14,4 +14,8 @@ func Example_append() {
 	fmt.Println(f3)
 	fmt.Println(f4)
 	// Output:
+	// [AAA BBB CCC]
+	// [DDD EEE]
+	// [AAA BBB CCC DDD EEE]
+	// [AAA BBB DDD EEE]
 }

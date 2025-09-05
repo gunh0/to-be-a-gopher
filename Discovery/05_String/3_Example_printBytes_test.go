@@ -10,5 +10,6 @@ func Example_printBytes() {
 		fmt.Printf("%x:", s[i])
 	}
 	fmt.Println()
-	//Output:
+	// Output:
+	// ea:b0:80:eb:82:98:eb:8b:a4:
 }

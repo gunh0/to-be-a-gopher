@@ -4,9 +4,10 @@ package hangul
 
 import "fmt"
 
-func ExampleModifyPrintBytes() {
+func Example_modifyPrintBytes() {
 	s := []byte("가나다")
 	s[2]++
 	fmt.Println(string(s))
-	//Output:
+	// Output:
+	// 각나다
 }
