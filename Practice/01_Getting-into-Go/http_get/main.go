@@ -2,13 +2,21 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
+	"log"
 	"net/http"
 )
 
 func main() {
-	resp, _ := http.Get("http://golang.org/")
+	resp, err := http.Get("https://go.dev/")
+	if err != nil {
+		log.Fatal(err)
+	}
 	defer resp.Body.Close()
-	body, _ := ioutil.ReadAll(resp.Body)
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Println(string(body))
 }
