@@ -39,4 +39,11 @@ make race                           # whole repository with the race detector
 ## Chapters
 
 <!-- CHAPTERS:START -->
+
+### I. Language & Runtime
+
+| # | Chapter | Weaknesses |
+|---|---|---|
+| 01 | [Memory Safety](01_memory-safety/) | CWE-125, CWE-226, CWE-130 |
+
 <!-- CHAPTERS:END -->
