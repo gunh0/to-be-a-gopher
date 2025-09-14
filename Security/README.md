@@ -45,5 +45,6 @@ make race                           # whole repository with the race detector
 | # | Chapter | Weaknesses |
 |---|---|---|
 | 01 | [Memory Safety](01_memory-safety/) | CWE-125, CWE-226, CWE-130 |
+| 02 | [Integer Overflow & Truncation](02_integer-overflow/) | CWE-190, CWE-681, CWE-197 |
 
 <!-- CHAPTERS:END -->
