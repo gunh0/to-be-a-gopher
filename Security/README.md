@@ -46,5 +46,6 @@ make race                           # whole repository with the race detector
 |---|---|---|
 | 01 | [Memory Safety](01_memory-safety/) | CWE-125, CWE-226, CWE-130 |
 | 02 | [Integer Overflow & Truncation](02_integer-overflow/) | CWE-190, CWE-681, CWE-197 |
+| 03 | [Slice & Map Aliasing](03_slice-aliasing/) | CWE-374, CWE-375, CWE-471 |
 
 <!-- CHAPTERS:END -->
