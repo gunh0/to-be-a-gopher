@@ -48,5 +48,6 @@ make race                           # whole repository with the race detector
 | 02 | [Integer Overflow & Truncation](02_integer-overflow/) | CWE-190, CWE-681, CWE-197 |
 | 03 | [Slice & Map Aliasing](03_slice-aliasing/) | CWE-374, CWE-375, CWE-471 |
 | 04 | [Data Races](04_data-races/) | CWE-362, CWE-367, CWE-820 |
+| 05 | [Panics as Denial of Service](05_panic-boundaries/) | CWE-248, CWE-476, CWE-400 |
 
 <!-- CHAPTERS:END -->
