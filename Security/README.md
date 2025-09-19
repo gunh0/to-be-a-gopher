@@ -50,5 +50,6 @@ make race                           # whole repository with the race detector
 | 04 | [Data Races](04_data-races/) | CWE-362, CWE-367, CWE-820 |
 | 05 | [Panics as Denial of Service](05_panic-boundaries/) | CWE-248, CWE-476, CWE-400 |
 | 06 | [Goroutine Leaks & Unbounded Concurrency](06_goroutine-leaks/) | CWE-400, CWE-770, CWE-772 |
+| 07 | [Error Messages as Information Disclosure](07_error-disclosure/) | CWE-209, CWE-497, CWE-200 |
 
 <!-- CHAPTERS:END -->
