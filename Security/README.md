@@ -52,4 +52,10 @@ make race                           # whole repository with the race detector
 | 06 | [Goroutine Leaks & Unbounded Concurrency](06_goroutine-leaks/) | CWE-400, CWE-770, CWE-772 |
 | 07 | [Error Messages as Information Disclosure](07_error-disclosure/) | CWE-209, CWE-497, CWE-200 |
 
+### II. Cryptography
+
+| # | Chapter | Weaknesses |
+|---|---|---|
+| 08 | [Secure Randomness](08_secure-randomness/) | CWE-338, CWE-330, CWE-335 |
+
 <!-- CHAPTERS:END -->
