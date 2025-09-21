@@ -57,5 +57,6 @@ make race                           # whole repository with the race detector
 | # | Chapter | Weaknesses |
 |---|---|---|
 | 08 | [Secure Randomness](08_secure-randomness/) | CWE-338, CWE-330, CWE-335 |
+| 09 | [Constant-Time Comparison](09_constant-time-compare/) | CWE-208, CWE-203 |
 
 <!-- CHAPTERS:END -->
