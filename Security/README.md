@@ -58,5 +58,6 @@ make race                           # whole repository with the race detector
 |---|---|---|
 | 08 | [Secure Randomness](08_secure-randomness/) | CWE-338, CWE-330, CWE-335 |
 | 09 | [Constant-Time Comparison](09_constant-time-compare/) | CWE-208, CWE-203 |
+| 10 | [Choosing Hash Functions](10_hash-functions/) | CWE-328, CWE-327 |
 
 <!-- CHAPTERS:END -->
