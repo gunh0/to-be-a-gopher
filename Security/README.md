@@ -62,5 +62,6 @@ make race                           # whole repository with the race detector
 | 11 | [HMAC-Signed Tokens](11_hmac-tokens/) | CWE-345, CWE-347, CWE-613 |
 | 12 | [Password Storage](12_password-hashing/) | CWE-916, CWE-759, CWE-760 |
 | 13 | [Authenticated Encryption](13_aead-encryption/) | CWE-323, CWE-353, CWE-327 |
+| 14 | [Key Derivation & Separation](14_key-derivation/) | CWE-320, CWE-323, CWE-916 |
 
 <!-- CHAPTERS:END -->
