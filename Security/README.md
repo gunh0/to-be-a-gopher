@@ -63,5 +63,6 @@ make race                           # whole repository with the race detector
 | 12 | [Password Storage](12_password-hashing/) | CWE-916, CWE-759, CWE-760 |
 | 13 | [Authenticated Encryption](13_aead-encryption/) | CWE-323, CWE-353, CWE-327 |
 | 14 | [Key Derivation & Separation](14_key-derivation/) | CWE-320, CWE-323, CWE-916 |
+| 15 | [Digital Signatures](15_digital-signatures/) | CWE-347, CWE-323, CWE-327 |
 
 <!-- CHAPTERS:END -->
