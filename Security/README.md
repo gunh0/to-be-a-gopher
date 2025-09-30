@@ -64,5 +64,6 @@ make race                           # whole repository with the race detector
 | 13 | [Authenticated Encryption](13_aead-encryption/) | CWE-323, CWE-353, CWE-327 |
 | 14 | [Key Derivation & Separation](14_key-derivation/) | CWE-320, CWE-323, CWE-916 |
 | 15 | [Digital Signatures](15_digital-signatures/) | CWE-347, CWE-323, CWE-327 |
+| 16 | [Post-Quantum Key Exchange](16_post-quantum-kem/) | CWE-327, CWE-326 |
 
 <!-- CHAPTERS:END -->
