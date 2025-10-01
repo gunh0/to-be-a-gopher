@@ -65,5 +65,6 @@ make race                           # whole repository with the race detector
 | 14 | [Key Derivation & Separation](14_key-derivation/) | CWE-320, CWE-323, CWE-916 |
 | 15 | [Digital Signatures](15_digital-signatures/) | CWE-347, CWE-323, CWE-327 |
 | 16 | [Post-Quantum Key Exchange](16_post-quantum-kem/) | CWE-327, CWE-326 |
+| 17 | [FIPS 140-3 Mode](17_fips-140-3/) | CWE-327, CWE-1188 |
 
 <!-- CHAPTERS:END -->

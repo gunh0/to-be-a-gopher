@@ -22,3 +22,5 @@ jobs:
         run: make vet
       - name: test (race)
         run: make race
+      - name: test (FIPS 140-3 mode)
+        run: GODEBUG=fips140=on go test ./...
