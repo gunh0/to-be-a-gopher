@@ -67,4 +67,10 @@ make race                           # whole repository with the race detector
 | 16 | [Post-Quantum Key Exchange](16_post-quantum-kem/) | CWE-327, CWE-326 |
 | 17 | [FIPS 140-3 Mode](17_fips-140-3/) | CWE-327, CWE-1188 |
 
+### III. Transport Security
+
+| # | Chapter | Weaknesses |
+|---|---|---|
+| 18 | [TLS Server Configuration](18_tls-server-hardening/) | CWE-326, CWE-327, CWE-757 |
+
 <!-- CHAPTERS:END -->
