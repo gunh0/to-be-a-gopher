@@ -72,5 +72,6 @@ make race                           # whole repository with the race detector
 | # | Chapter | Weaknesses |
 |---|---|---|
 | 18 | [TLS Server Configuration](18_tls-server-hardening/) | CWE-326, CWE-327, CWE-757 |
+| 19 | [TLS Client Verification](19_tls-client-verification/) | CWE-295, CWE-297 |
 
 <!-- CHAPTERS:END -->
