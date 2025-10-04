@@ -73,5 +73,6 @@ make race                           # whole repository with the race detector
 |---|---|---|
 | 18 | [TLS Server Configuration](18_tls-server-hardening/) | CWE-326, CWE-327, CWE-757 |
 | 19 | [TLS Client Verification](19_tls-client-verification/) | CWE-295, CWE-297 |
+| 20 | [Mutual TLS](20_mutual-tls/) | CWE-295, CWE-287, CWE-863 |
 
 <!-- CHAPTERS:END -->
