@@ -75,4 +75,10 @@ make race                           # whole repository with the race detector
 | 19 | [TLS Client Verification](19_tls-client-verification/) | CWE-295, CWE-297 |
 | 20 | [Mutual TLS](20_mutual-tls/) | CWE-295, CWE-287, CWE-863 |
 
+### IV. HTTP Services
+
+| # | Chapter | Weaknesses |
+|---|---|---|
+| 21 | [HTTP Timeouts & Slowloris](21_http-timeouts/) | CWE-400, CWE-1088 |
+
 <!-- CHAPTERS:END -->
