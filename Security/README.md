@@ -80,5 +80,6 @@ make race                           # whole repository with the race detector
 | # | Chapter | Weaknesses |
 |---|---|---|
 | 21 | [HTTP Timeouts & Slowloris](21_http-timeouts/) | CWE-400, CWE-1088 |
+| 22 | [Request Size Limits & Decompression Bombs](22_request-size-limits/) | CWE-400, CWE-409, CWE-770 |
 
 <!-- CHAPTERS:END -->
