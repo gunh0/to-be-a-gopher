@@ -81,5 +81,6 @@ make race                           # whole repository with the race detector
 |---|---|---|
 | 21 | [HTTP Timeouts & Slowloris](21_http-timeouts/) | CWE-400, CWE-1088 |
 | 22 | [Request Size Limits & Decompression Bombs](22_request-size-limits/) | CWE-400, CWE-409, CWE-770 |
+| 23 | [Security Response Headers](23_security-headers/) | CWE-693, CWE-1021, CWE-79 |
 
 <!-- CHAPTERS:END -->
