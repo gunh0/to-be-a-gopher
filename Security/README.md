@@ -83,5 +83,6 @@ make race                           # whole repository with the race detector
 | 22 | [Request Size Limits & Decompression Bombs](22_request-size-limits/) | CWE-400, CWE-409, CWE-770 |
 | 23 | [Security Response Headers](23_security-headers/) | CWE-693, CWE-1021, CWE-79 |
 | 24 | [CSRF Protection](24_csrf-protection/) | CWE-352 |
+| 25 | [Contextual Auto-Escaping](25_html-template-xss/) | CWE-79, CWE-116 |
 
 <!-- CHAPTERS:END -->
