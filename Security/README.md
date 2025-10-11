@@ -85,5 +85,6 @@ make race                           # whole repository with the race detector
 | 24 | [CSRF Protection](24_csrf-protection/) | CWE-352 |
 | 25 | [Contextual Auto-Escaping](25_html-template-xss/) | CWE-79, CWE-116 |
 | 26 | [Open Redirects](26_open-redirect/) | CWE-601 |
+| 27 | [SSRF Defence](27_ssrf-guard/) | CWE-918 |
 
 <!-- CHAPTERS:END -->
