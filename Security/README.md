@@ -87,5 +87,6 @@ make race                           # whole repository with the race detector
 | 26 | [Open Redirects](26_open-redirect/) | CWE-601 |
 | 27 | [SSRF Defence](27_ssrf-guard/) | CWE-918 |
 | 28 | [Rate Limiting](28_rate-limiting/) | CWE-770, CWE-307, CWE-799 |
+| 29 | [Session Cookies](29_session-cookies/) | CWE-614, CWE-1004, CWE-384 |
 
 <!-- CHAPTERS:END -->
