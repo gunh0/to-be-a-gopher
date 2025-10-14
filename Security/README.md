@@ -88,5 +88,6 @@ make race                           # whole repository with the race detector
 | 27 | [SSRF Defence](27_ssrf-guard/) | CWE-918 |
 | 28 | [Rate Limiting](28_rate-limiting/) | CWE-770, CWE-307, CWE-799 |
 | 29 | [Session Cookies](29_session-cookies/) | CWE-614, CWE-1004, CWE-384 |
+| 30 | [JWT Verification Pitfalls](30_jwt-verification/) | CWE-347, CWE-345, CWE-613 |
 
 <!-- CHAPTERS:END -->
