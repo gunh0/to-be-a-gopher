@@ -90,4 +90,10 @@ make race                           # whole repository with the race detector
 | 29 | [Session Cookies](29_session-cookies/) | CWE-614, CWE-1004, CWE-384 |
 | 30 | [JWT Verification Pitfalls](30_jwt-verification/) | CWE-347, CWE-345, CWE-613 |
 
+### V. Input, Files & Processes
+
+| # | Chapter | Weaknesses |
+|---|---|---|
+| 31 | [Path Traversal](31_path-traversal/) | CWE-22, CWE-23, CWE-59 |
+
 <!-- CHAPTERS:END -->
