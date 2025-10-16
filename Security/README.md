@@ -95,5 +95,6 @@ make race                           # whole repository with the race detector
 | # | Chapter | Weaknesses |
 |---|---|---|
 | 31 | [Path Traversal](31_path-traversal/) | CWE-22, CWE-23, CWE-59 |
+| 32 | [Archive Extraction (Zip Slip & Bombs)](32_archive-extraction/) | CWE-22, CWE-409, CWE-59 |
 
 <!-- CHAPTERS:END -->
