@@ -96,5 +96,6 @@ make race                           # whole repository with the race detector
 |---|---|---|
 | 31 | [Path Traversal](31_path-traversal/) | CWE-22, CWE-23, CWE-59 |
 | 32 | [Archive Extraction (Zip Slip & Bombs)](32_archive-extraction/) | CWE-22, CWE-409, CWE-59 |
+| 33 | [Command Injection](33_command-injection/) | CWE-78, CWE-88, CWE-426 |
 
 <!-- CHAPTERS:END -->
