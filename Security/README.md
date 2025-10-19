@@ -98,5 +98,6 @@ make race                           # whole repository with the race detector
 | 32 | [Archive Extraction (Zip Slip & Bombs)](32_archive-extraction/) | CWE-22, CWE-409, CWE-59 |
 | 33 | [Command Injection](33_command-injection/) | CWE-78, CWE-88, CWE-426 |
 | 34 | [SQL Injection](34_sql-injection/) | CWE-89, CWE-943 |
+| 35 | [JSON Decoding Pitfalls](35_json-decoding/) | CWE-915, CWE-436, CWE-20 |
 
 <!-- CHAPTERS:END -->
