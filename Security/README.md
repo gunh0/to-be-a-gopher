@@ -100,5 +100,6 @@ make race                           # whole repository with the race detector
 | 34 | [SQL Injection](34_sql-injection/) | CWE-89, CWE-943 |
 | 35 | [JSON Decoding Pitfalls](35_json-decoding/) | CWE-915, CWE-436, CWE-20 |
 | 36 | [Regular Expressions without ReDoS](36_regexp-redos/) | CWE-1333, CWE-400 |
+| 37 | [Log Injection & Forging](37_log-injection/) | CWE-117, CWE-150 |
 
 <!-- CHAPTERS:END -->
