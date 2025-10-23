@@ -1,0 +1,49 @@
+{
+	"Path": "github.com/example/app",
+	"Main": true,
+	"Dir": "/src/app",
+	"GoMod": "/src/app/go.mod",
+	"GoVersion": "1.25.0"
+}
+{
+	"Path": "golang.org/x/crypto",
+	"Version": "v0.42.0",
+	"Time": "2025-09-08T00:00:00Z",
+	"Indirect": true,
+	"GoVersion": "1.24.0"
+}
+{
+	"Path": "github.com/sirupsen/logrus",
+	"Version": "v1.9.3",
+	"Replace": {
+		"Path": "github.com/attacker/logrus",
+		"Version": "v1.9.3"
+	}
+}
+{
+	"Path": "github.com/boltdb-go/bolt",
+	"Version": "v1.3.1"
+}
+{
+	"Path": "github.com/example/internal-lib",
+	"Version": "v0.0.0-20250911093012-4f2c9a71d0e8"
+}
+{
+	"Path": "github.com/example/shared",
+	"Version": "v1.4.0",
+	"Replace": {
+		"Path": "../shared",
+		"Dir": "/src/shared",
+		"GoMod": "/src/shared/go.mod"
+	}
+}
+{
+	"Path": "github.com/example/legacy",
+	"Version": "v1.2.0",
+	"Retracted": ["v1.2.0 published with a broken authorisation check"],
+	"Deprecated": "use github.com/example/legacy/v2"
+}
+{
+	"Path": "github.com/google/uuid",
+	"Version": "v1.6.0"
+}

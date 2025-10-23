@@ -103,4 +103,10 @@ make race                           # whole repository with the race detector
 | 37 | [Log Injection & Forging](37_log-injection/) | CWE-117, CWE-150 |
 | 38 | [Secrets in Memory and Logs](38_secret-handling/) | CWE-532, CWE-226, CWE-312 |
 
+### VI. Supply Chain & Assurance
+
+| # | Chapter | Weaknesses |
+|---|---|---|
+| 39 | [Module Integrity](39_module-integrity/) | CWE-494, CWE-829, CWE-1357 |
+
 <!-- CHAPTERS:END -->

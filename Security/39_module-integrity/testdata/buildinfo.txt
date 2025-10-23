@@ -1,0 +1,17 @@
+go	go1.25.3
+path	github.com/example/app/cmd/server
+mod	github.com/example/app	v1.8.0	
+dep	golang.org/x/crypto	v0.42.0	h1:chiH31gIWm57EkTXpwnqf8qeuMUi0yekh6mT2AvFlqI=
+dep	github.com/sirupsen/logrus	v1.9.3	
+=>	github.com/attacker/logrus	v1.9.3	h1:BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=
+dep	github.com/example/shared	v1.4.0	
+=>	../shared	(devel)	
+build	-buildmode=exe
+build	-compiler=gc
+build	CGO_ENABLED=0
+build	GOARCH=amd64
+build	GOOS=linux
+build	vcs=git
+build	vcs.revision=4f2c9a71d0e8b6c35a1f0e2d9c7b4a6e3f1d8c5b
+build	vcs.time=2025-10-01T12:00:00Z
+build	vcs.modified=false
