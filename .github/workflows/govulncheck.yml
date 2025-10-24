@@ -1,0 +1,26 @@
+name: govulncheck
+
+# Kept apart from the ci workflow: a new advisory can turn this red without
+# any code change, and that should not be read as a broken build.
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vuln:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # govulncheck reports standard library issues for the toolchain it runs
+      # on, so scan with the newest stable release rather than the go.mod floor.
+      - uses: actions/setup-go@v6
+        with:
+          go-version: stable
+      - name: govulncheck
+        run: make vuln

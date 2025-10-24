@@ -108,5 +108,6 @@ make race                           # whole repository with the race detector
 | # | Chapter | Weaknesses |
 |---|---|---|
 | 39 | [Module Integrity](39_module-integrity/) | CWE-494, CWE-829, CWE-1357 |
+| 40 | [Vulnerability Scanning with govulncheck](40_vulnerability-scanning/) | CWE-1395, CWE-1104 |
 
 <!-- CHAPTERS:END -->

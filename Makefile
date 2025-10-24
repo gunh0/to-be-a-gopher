@@ -1,7 +1,9 @@
 GO ?= go
 PKGS := ./...
 
-.PHONY: all fmt fmt-check vet test race cover clean
+GOVULNCHECK ?= golang.org/x/vuln/cmd/govulncheck@v1.1.4
+
+.PHONY: all fmt fmt-check vet test race cover vuln clean
 
 all: fmt-check vet test
 
@@ -23,6 +25,9 @@ race:
 cover:
 	$(GO) test -coverprofile=coverage.out $(PKGS)
 	$(GO) tool cover -func=coverage.out | tail -1
+
+vuln:
+	$(GO) run $(GOVULNCHECK) ./...
 
 clean:
 	rm -f coverage.out
