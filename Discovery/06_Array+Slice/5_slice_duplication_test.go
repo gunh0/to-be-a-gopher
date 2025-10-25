@@ -6,6 +6,7 @@ import "fmt"
 func Example_sliceCopy() {
 	src := []int{30, 20, 50, 10, 40}
 	dest := make([]int, len(src))
+	//lint:ignore S1001 the manual loop is what the copy examples below replace
 	for i := range src {
 		dest[i] = src[i]
 	}

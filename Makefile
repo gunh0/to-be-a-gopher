@@ -2,8 +2,9 @@ GO ?= go
 PKGS := ./...
 
 GOVULNCHECK ?= golang.org/x/vuln/cmd/govulncheck@v1.1.4
+STATICCHECK ?= honnef.co/go/tools/cmd/staticcheck@2025.1.1
 
-.PHONY: all fmt fmt-check vet test race cover vuln clean
+.PHONY: all fmt fmt-check vet test race cover vuln lint clean
 
 all: fmt-check vet test
 
@@ -28,6 +29,9 @@ cover:
 
 vuln:
 	$(GO) run $(GOVULNCHECK) ./...
+
+lint:
+	$(GO) run $(STATICCHECK) ./...
 
 clean:
 	rm -f coverage.out

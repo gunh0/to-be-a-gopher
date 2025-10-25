@@ -21,7 +21,7 @@ func Eval(expr string) int {
 	reduce := func(higher string) {
 		for len(ops) > 0 {
 			op := ops[len(ops)-1]
-			if strings.Index(higher, op) < 0 {
+			if !strings.Contains(higher, op) {
 				return
 			}
 			ops = ops[:len(ops)-1]

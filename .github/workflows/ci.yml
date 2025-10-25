@@ -21,6 +21,8 @@ jobs:
         run: make fmt-check
       - name: vet
         run: make vet
+      - name: staticcheck
+        run: make lint
       - name: test (race)
         run: make race
       - name: test (FIPS 140-3 mode)
