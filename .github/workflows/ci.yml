@@ -27,3 +27,5 @@ jobs:
         run: make race
       - name: test (FIPS 140-3 mode)
         run: GODEBUG=fips140=on go test ./...
+      - name: fuzz (smoke)
+        run: make fuzz FUZZTIME=30s

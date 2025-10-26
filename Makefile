@@ -3,8 +3,9 @@ PKGS := ./...
 
 GOVULNCHECK ?= golang.org/x/vuln/cmd/govulncheck@v1.1.4
 STATICCHECK ?= honnef.co/go/tools/cmd/staticcheck@2025.1.1
+FUZZTIME    ?= 10s
 
-.PHONY: all fmt fmt-check vet test race cover vuln lint clean
+.PHONY: all fmt fmt-check vet test race cover vuln lint fuzz clean
 
 all: fmt-check vet test
 
@@ -32,6 +33,9 @@ vuln:
 
 lint:
 	$(GO) run $(STATICCHECK) ./...
+
+fuzz:
+	$(GO) test -run '^$$' -fuzz '^FuzzParse$$' -fuzztime $(FUZZTIME) ./Security/42_fuzzing/
 
 clean:
 	rm -f coverage.out
