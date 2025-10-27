@@ -1,0 +1,21 @@
+go	go1.25.1
+path	example.com/app/cmd/server
+mod	example.com/app	v1.8.1-0.20251002093000-4f2c9a71d0e8+dirty	
+dep	golang.org/x/crypto	v0.42.0	h1:chiH31gIWm57EkTXpwnqf8qeuMUi0yekh6mT2AvFlqI=
+dep	example.com/internal/billing	v0.3.0	
+=>	/home/dev/src/billing	(devel)	
+build	-buildmode=exe
+build	-compiler=gc
+build	-ldflags="-X main.stripeKey=sk_live_51Hc0ffee"
+build	-race=true
+build	CGO_ENABLED=1
+build	CGO_CFLAGS=-I/home/dev/vendor/include
+build	CGO_CPPFLAGS=
+build	CGO_CXXFLAGS=
+build	CGO_LDFLAGS=
+build	GOARCH=amd64
+build	GOOS=linux
+build	vcs=git
+build	vcs.revision=4f2c9a71d0e8b6c35a1f0e2d9c7b4a6e3f1d8c5b
+build	vcs.time=2025-10-02T09:30:00Z
+build	vcs.modified=true

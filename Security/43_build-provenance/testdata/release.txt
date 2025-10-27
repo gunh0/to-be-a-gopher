@@ -1,0 +1,16 @@
+go	go1.25.3
+path	example.com/app/cmd/server
+mod	example.com/app	v1.8.0	
+dep	golang.org/x/crypto	v0.42.0	h1:chiH31gIWm57EkTXpwnqf8qeuMUi0yekh6mT2AvFlqI=
+dep	golang.org/x/sys	v0.36.0	h1:KVRy2GtZBrk1cBYA7MKu5bEZFxQk4NIDV6RLVcC8o0k=
+build	-buildmode=exe
+build	-compiler=gc
+build	-trimpath=true
+build	CGO_ENABLED=0
+build	GOARCH=amd64
+build	GOOS=linux
+build	GOAMD64=v1
+build	vcs=git
+build	vcs.revision=4f2c9a71d0e8b6c35a1f0e2d9c7b4a6e3f1d8c5b
+build	vcs.time=2025-10-01T12:00:00Z
+build	vcs.modified=false

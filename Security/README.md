@@ -111,5 +111,6 @@ make race                           # whole repository with the race detector
 | 40 | [Vulnerability Scanning with govulncheck](40_vulnerability-scanning/) | CWE-1395, CWE-1104 |
 | 41 | [Static Analysis for Security](41_static-analysis/) | CWE-295, CWE-338, CWE-1006 |
 | 42 | [Native Fuzzing](42_fuzzing/) | CWE-129, CWE-194, CWE-20 |
+| 43 | [Build Provenance & Reproducibility](43_build-provenance/) | CWE-1357, CWE-494, CWE-200 |
 
 <!-- CHAPTERS:END -->
