@@ -1,10 +1,63 @@
 <p align="center"><img src="README.assets/golang-logo.png"></p>
 
+<p align="center">
+  <a href="https://github.com/gunh0/to-be-a-gopher/actions/workflows/ci.yml"><img src="https://github.com/gunh0/to-be-a-gopher/actions/workflows/ci.yml/badge.svg" alt="ci"></a>
+  <img src="https://img.shields.io/badge/go-1.25-00ADD8?logo=go&logoColor=white" alt="go 1.25">
+  <img src="https://img.shields.io/badge/Secure%20Go-43%20chapters-2E7D32" alt="43 chapters">
+</p>
+
+# To Be a Gopher
+
+A Go notebook that started with first programs in 2021 and grew into **Secure Go**, a series of 43 short white papers on writing Go as a security engineer.
+
+| Part | What it is |
+|---|---|
+| [Discovery](Discovery/) | Language basics, written while learning Go (2021) |
+| [Practice](Practice/) | Small programs: multiple returns, raw TCP, HTTP GET (2022) |
+| [FAQ](faq/) | One-off answers, such as generics (2024) |
+| [**Secure Go**](Security/) | 43 chapters, each with a threat model, an insecure and a secure pattern, and tests that prove both (2025) |
+
+<br/>
+
+## Secure Go
+
+Each chapter takes one weakness class (with CWE IDs), explains what the Go language, runtime or standard library already guarantees, shows the code that still goes wrong, and backs every claim with runnable tests. Standard library first, Go 1.25 baseline, tests offline.
+
+| Part | Chapters | Topics |
+|---|---|---|
+| I. Language & Runtime | 01–07 | memory safety and capacity re-slicing, integer overflow, aliasing, data races, panics as DoS, goroutine leaks, error disclosure |
+| II. Cryptography | 08–17 | `crypto/rand`, constant-time compare, hash choice, HMAC tokens, Argon2id/PBKDF2, AEAD and nonce reuse, `crypto/hkdf`, signatures, `crypto/mlkem`, FIPS 140-3 mode |
+| III. Transport Security | 18–20 | TLS server hardening, client verification and pinning, mutual TLS |
+| IV. HTTP Services | 21–30 | timeouts, body limits and gzip bombs, security headers, `http.CrossOriginProtection`, `html/template`, open redirects, SSRF, rate limiting, session cookies, JWT |
+| V. Input, Files & Processes | 31–38 | `os.Root` path traversal, zip slip, command injection, SQL injection, `encoding/json` pitfalls, RE2 and ReDoS, log injection, secret redaction |
+| VI. Supply Chain & Assurance | 39–43 | module integrity, govulncheck, static analysis, native fuzzing, build provenance |
+
+Full index with CWE mapping: [Security/README.md](Security/README.md)
+
+<br/>
+
+## Getting started
+
+Requires Go 1.25 or later.
+
+```bash
+make            # gofmt check, go vet, go test
+make race       # tests with the race detector
+make lint       # staticcheck
+make vuln       # govulncheck
+make fuzz       # 10 s fuzz run of the chapter 42 parser
+GODEBUG=fips140=on go test ./...   # every test also passes in FIPS 140-3 mode
+```
+
+CI runs all of the above on every push: gofmt, vet, staticcheck, race tests, FIPS 140-3 mode tests and a fuzz smoke test in the `ci` workflow (the badge above), and govulncheck in its own `govulncheck` workflow, so a newly published advisory does not show up as a failing build.
+
 <br/>
 
 ## Contents
 
-#### Discovery
+### Discovery
+
+First steps with the language: packages, functions, strings and Hangul, arrays and slices, maps, I/O. Most examples are `Example` tests, so `go test` checks their output.
 
 ```bash
 $ tree -L 2 Discovery
@@ -46,7 +99,7 @@ Discovery
     └── 1_io_test.go
 ```
 
-#### Practice
+### Practice
 
 - Getting into Go (`Practice/01_Getting-into-Go`)
   - Multiple returns: `returns/`
@@ -54,93 +107,18 @@ Discovery
   - Read TCP status: `read_status/`
   - HTTP GET: `http_get/`
 
-#### FAQ
+### FAQ
 
 - Simple generic return: `faq/simple_generic_return.go`
 
 <br/>
 
-<br/>
+## Notes on the toolchain
 
-## Documentation
+- **gofmt**: `gofmt -w .` (or `make fmt`) formats everything; CI fails on unformatted files.
+- **go run**: `go run ./Discovery/01_TryGo` builds and runs a main package; `go run -work` keeps the temporary build directory.
+- **go test**: test files end in `_test.go` and sit next to the code they test; `go test -v ./...` runs them recursively.
 
-Go is a statically typed, compiled programming language designed at Google.
+## License
 
-The Go programming language is an open source project to make programmers more productive.
-
-Go is expressive, concise, clean, and efficient.
-
-Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction.
-
-Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection.
-
-It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
-
-<br/>
-
-<br/>
-
-## gofmt
-
-#### Introduction
-
-[Gofmt](https://golang.org/cmd/gofmt/) is a tool that automatically formats Go source code.
-
-Gofmt'd code is:
-
-- easier to **write**: never worry about minor formatting concerns while hacking away,
-- easier to **read**: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
-- easier to **maintain**: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
-- **uncontroversial**: never have a debate about spacing or brace position ever again!
-
-<br/>
-
-#### Format your code
-
-We recently conducted a survey of Go packages in the wild and found that about 70% of them are formatted according to gofmt's rules.
-
-This was more than expected - and thanks to everyone who uses gofmt - but it would be great to close the gap.
-
-To format your code, you can use the gofmt tool directly:
-
-```
-gofmt -w yourcode.go
-```
-
-Or you can use the "[go fmt](https://golang.org/cmd/go/#hdr-Gofmt__reformat__package_sources)" command:
-
-```
-go fmt path/to/your/package
-```
-
-<br/>
-
-<br/>
-
-## Compile and run Go program
-
-```
-go run [build flags] [-exec xprog] package [arguments...]
-```
-
-Run compiles and runs the named main Go package.
-
-Command `go run` performs project's building under the hood and with flag _--work_ (`go run --work main.go`) you can see the location of temporary build files.
-
-<br/>
-
-<br/>
-
-## Testing
-
-Files containing tests should be called `name_test`, with the `_test` suffix. They should be alongside the code that they are testing.
-
-To run the tests recursively call `go test -v ./...`
-
-<br/>
-
-<br/>
-
-## How to build your first web application with Go
-
-> <https://freshman.tech/web-development-with-go/>
+[MIT](LICENSE)
