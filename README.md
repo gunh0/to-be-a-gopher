@@ -19,40 +19,6 @@ A Go notebook that started with first programs in 2021 and grew into **Secure Go
 
 <br/>
 
-## Secure Go
-
-Each chapter takes one weakness class (with CWE IDs), explains what the Go language, runtime or standard library already guarantees, shows the code that still goes wrong, and backs every claim with runnable tests. Standard library first, Go 1.25 baseline, tests offline.
-
-| Part | Chapters | Topics |
-|---|---|---|
-| I. Language & Runtime | 01–07 | memory safety and capacity re-slicing, integer overflow, aliasing, data races, panics as DoS, goroutine leaks, error disclosure |
-| II. Cryptography | 08–17 | `crypto/rand`, constant-time compare, hash choice, HMAC tokens, Argon2id/PBKDF2, AEAD and nonce reuse, `crypto/hkdf`, signatures, `crypto/mlkem`, FIPS 140-3 mode |
-| III. Transport Security | 18–20 | TLS server hardening, client verification and pinning, mutual TLS |
-| IV. HTTP Services | 21–30 | timeouts, body limits and gzip bombs, security headers, `http.CrossOriginProtection`, `html/template`, open redirects, SSRF, rate limiting, session cookies, JWT |
-| V. Input, Files & Processes | 31–38 | `os.Root` path traversal, zip slip, command injection, SQL injection, `encoding/json` pitfalls, RE2 and ReDoS, log injection, secret redaction |
-| VI. Supply Chain & Assurance | 39–43 | module integrity, govulncheck, static analysis, native fuzzing, build provenance |
-
-Full index with CWE mapping: [Security/README.md](Security/README.md)
-
-<br/>
-
-## Getting started
-
-Requires Go 1.25 or later.
-
-```bash
-make            # gofmt check, go vet, go test
-make race       # tests with the race detector
-make lint       # staticcheck
-make vuln       # govulncheck
-make fuzz       # 10 s fuzz run of the chapter 42 parser
-GODEBUG=fips140=on go test ./...   # every test also passes in FIPS 140-3 mode
-```
-
-CI runs all of the above on every push: gofmt, vet, staticcheck, race tests, FIPS 140-3 mode tests and a fuzz smoke test in the `ci` workflow (the badge above), and govulncheck in its own `govulncheck` workflow, so a newly published advisory does not show up as a failing build.
-
-<br/>
-
 ## Contents
 
 ### Discovery
@@ -110,6 +76,38 @@ Discovery
 ### FAQ
 
 - Simple generic return: `faq/simple_generic_return.go`
+
+### Secure Go
+
+Each chapter takes one weakness class (with CWE IDs), explains what the Go language, runtime or standard library already guarantees, shows the code that still goes wrong, and backs every claim with runnable tests. Standard library first, Go 1.25 baseline, tests offline.
+
+| Part | Chapters | Topics |
+|---|---|---|
+| I. Language & Runtime | 01–07 | memory safety and capacity re-slicing, integer overflow, aliasing, data races, panics as DoS, goroutine leaks, error disclosure |
+| II. Cryptography | 08–17 | `crypto/rand`, constant-time compare, hash choice, HMAC tokens, Argon2id/PBKDF2, AEAD and nonce reuse, `crypto/hkdf`, signatures, `crypto/mlkem`, FIPS 140-3 mode |
+| III. Transport Security | 18–20 | TLS server hardening, client verification and pinning, mutual TLS |
+| IV. HTTP Services | 21–30 | timeouts, body limits and gzip bombs, security headers, `http.CrossOriginProtection`, `html/template`, open redirects, SSRF, rate limiting, session cookies, JWT |
+| V. Input, Files & Processes | 31–38 | `os.Root` path traversal, zip slip, command injection, SQL injection, `encoding/json` pitfalls, RE2 and ReDoS, log injection, secret redaction |
+| VI. Supply Chain & Assurance | 39–43 | module integrity, govulncheck, static analysis, native fuzzing, build provenance |
+
+Full index with CWE mapping: [Security/README.md](Security/README.md)
+
+<br/>
+
+## Getting started
+
+Requires Go 1.25 or later.
+
+```bash
+make            # gofmt check, go vet, go test
+make race       # tests with the race detector
+make lint       # staticcheck
+make vuln       # govulncheck
+make fuzz       # 10 s fuzz run of the chapter 42 parser
+GODEBUG=fips140=on go test ./...   # every test also passes in FIPS 140-3 mode
+```
+
+CI runs all of the above on every push: gofmt, vet, staticcheck, race tests, FIPS 140-3 mode tests and a fuzz smoke test in the `ci` workflow (the badge above), and govulncheck in its own `govulncheck` workflow, so a newly published advisory does not show up as a failing build.
 
 <br/>
 
