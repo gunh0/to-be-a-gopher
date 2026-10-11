@@ -12,9 +12,8 @@ A Go notebook that started with first programs in 2021 and grew into **Secure Go
 
 | Part | What it is |
 |---|---|
-| [Discovery](Discovery/) | Language basics, written while learning Go (2021) |
+| [Discovery](Discovery/) | Language basics, written while learning Go (2021), plus generics (2024) |
 | [Practice](Practice/) | Small programs: multiple returns, raw TCP, HTTP GET (2022) |
-| [FAQ](faq/) | One-off answers, such as generics (2024) |
 | [**Secure Go**](Security/) | 43 chapters, each with a threat model, an insecure and a secure pattern, and tests that prove both (2025) |
 
 <br/>
@@ -23,7 +22,7 @@ A Go notebook that started with first programs in 2021 and grew into **Secure Go
 
 ### Discovery
 
-First steps with the language: packages, functions, strings and Hangul, arrays and slices, maps, I/O. Most examples are `Example` tests, so `go test` checks their output.
+First steps with the language: packages, functions, strings and Hangul, arrays and slices, maps, I/O, generics. Most examples are `Example` tests, so `go test` checks their output.
 
 ```bash
 $ tree -L 2 Discovery
@@ -61,8 +60,10 @@ Discovery
 │   ├── 2_map_equality
 │   ├── 3_maps_test.go
 │   └── 4_set_test.go
-└── 08_Input+Output
-    └── 1_io_test.go
+├── 08_Input+Output
+│   └── 1_io_test.go
+└── 09_Generics
+    └── simple_generic_return.go
 ```
 
 ### Practice
@@ -72,10 +73,6 @@ Discovery
   - Named return values: `named_return/`
   - Read TCP status: `read_status/`
   - HTTP GET: `http_get/`
-
-### FAQ
-
-- Simple generic return: `faq/simple_generic_return.go`
 
 ### Secure Go
 
