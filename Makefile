@@ -1,7 +1,7 @@
 GO ?= go
 PKGS := ./...
 
-GOVULNCHECK ?= golang.org/x/vuln/cmd/govulncheck@v1.1.4
+GOVULNCHECK ?= golang.org/x/vuln/cmd/govulncheck@v1.8.0
 STATICCHECK ?= honnef.co/go/tools/cmd/staticcheck@2025.1.1
 FUZZTIME    ?= 10s
 
